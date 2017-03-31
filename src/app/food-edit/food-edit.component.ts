@@ -8,6 +8,11 @@ import { Food } from './../food.model';
 })
 export class FoodEditComponent implements OnInit {
   @Input() editFood: Food;
+  @Output() endEditFoodSender = new EventEmitter();
+
+  endEditFood() {
+    this.endEditFoodSender.emit();
+  }
 
   constructor() { }
 
