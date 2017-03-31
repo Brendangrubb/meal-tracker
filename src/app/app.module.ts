@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FoodListComponent } from './food-list/food-list.component';
 import { FoodEditComponent } from './food-edit/food-edit.component';
+import { FoodSaveComponent } from './food-save/food-save.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FoodListComponent,
-    FoodEditComponent
+    FoodEditComponent,
+    FoodSaveComponent
   ],
   imports: [
     BrowserModule,

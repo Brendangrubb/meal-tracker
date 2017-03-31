@@ -1,11 +1,17 @@
-
 <app-header></app-header>
+
+<div class="container">
+  <div class="row center">
+    <app-food-save
+      (saveFoodSender)="saveFood($event)"
+    ></app-food-save>
+  </div>
+</div>
 
 <div class="container main-container">
 
   <div class="row">
-
-    <div class="col-md-8">
+    <div class="col-md-9">
       <app-food-list
       [foodList]="foodList"
       (deleteFoodSender)="deleteFood($event)"
@@ -13,13 +19,12 @@
       ></app-food-list>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-3">
       <app-food-edit
         [editFood]="editFood"
         (endEditFoodSender)="endEditFood()"
       ></app-food-edit>
     </div>
-
   </div>
 
 </div>

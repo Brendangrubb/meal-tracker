@@ -30,4 +30,8 @@ export class AppComponent {
     this.editFood = null;
   }
 
+  saveFood(newFood) {
+    this.foodList.push(newFood);
+  }
+
 }
