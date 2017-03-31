@@ -1,7 +1,6 @@
-
-
 header {
   font-size: 4em;
+  margin-bottom: 25px;
   padding: 40px;
   background-color: beige;
 }
@@ -10,6 +9,29 @@ header {
   text-align: center;
 }
 
+.food-cal {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.food-cat {
+  font-size: 1em;
+}
+
+.food-desc {
+  font-size: 1.2em;
+}
+
+.food-name {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .main-container {
+  padding-top: 15px;
   background-color: ghostwhite;
+}
+
+.opaque {
+  opacity: .75;
 }
