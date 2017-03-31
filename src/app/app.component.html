@@ -3,9 +3,19 @@
 
 <div class="container main-container">
 
-<app-food-list
-  [foodList]='foodList'
-  (deleteFoodSender)="deleteFood($event)"
-></app-food-list>
+  <div class="row">
+
+    <div class="col-md-8">
+      <app-food-list
+      [foodList]='foodList'
+      (deleteFoodSender)="deleteFood($event)"
+      ></app-food-list>
+    </div>
+
+    <div class="col-md-4">
+      <app-food-edit></app-food-edit>
+    </div>
+
+  </div>
 
 </div>
