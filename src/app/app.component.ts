@@ -15,4 +15,9 @@ export class AppComponent {
     new Food('Fries', 'snack', 'french fries with mustard and vinegar', 600),
     new Food('Sausage Stugged Tomatoes', 'dinner', 'steak tomatoes stuffed with a vegan sausage hash with rice and asparagus', 650)
   ];
+
+  deleteFood(idx: number) {
+  this.foodList.splice(idx, 1);
+}
+
 }

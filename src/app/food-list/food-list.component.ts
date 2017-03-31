@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Food } from './../food.model';
 
 
@@ -9,6 +9,11 @@ import { Food } from './../food.model';
 })
 export class FoodListComponent implements OnInit {
   @Input() foodList: Food[];
+  @Output() deleteFoodSender = new EventEmitter();
+
+  deleteFood(idx: number) {
+    this.deleteFoodSender.emit(idx);
+  }
 
   constructor() { }
 

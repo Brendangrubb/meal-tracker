@@ -3,6 +3,9 @@
 
 <div class="container main-container">
 
-<app-food-list [foodList]='foodList'></app-food-list>
+<app-food-list
+  [foodList]='foodList'
+  (deleteFoodSender)="deleteFood($event)"
+></app-food-list>
 
 </div>
