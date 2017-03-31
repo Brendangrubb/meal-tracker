@@ -1,31 +1,105 @@
-# MealTracker
+# **Meal Tracker**
+#### Brendan Grubb, 3/31/2017
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+&nbsp;
+## Description
+**Meal Tracker** is a Javascript application that demonstrates my ability to build a project using the Angular framework. The user of **Meal Tracker** is able to log information about the foods they eat in a day. This data, such as descriptions and calorie counts, can be used to maintain a healthy and regular diet.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+&nbsp;
+## Setup/Installation Requirements
+##### _To view and use this application:_
+* It is necessary to download and install the following programs to use this application
+  * [Git](https://git-scm.com/)
+  * [Node.js](https://nodejs.org/) (with NPM)
+  * [Bower](https://bower.io/)
+  * [Typescript](https://www.npmjs.com/package/typescript)
+  * [Angular2 CLI](https://github.com/angular/angular-cli)
+* Go to my [Github repository](https://github.com/Brendangrubb/meal-tracker)
+* Download the zip file via the green button and unzip the file
+* Open Terminal and navigate to **_meal-tracker-master_** project folder
+* Type the following commands in Terminal:
+  * npm install
+  * bower install
+  * ng serve
+* Visit [http://localhost:4200](http://localhost:4200)
+* The application will be ready to use!
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+&nbsp;
+## Planning
 
-## Running unit tests
+#### Basic UI
+* The user can add a food item to the meal tracker, including it's name, calorie count and a detailed description or notes about the item. They can also see a list of all the foods they have logged that day and edit or delete individual listings after they have been added. The user is able to filter which foods are viewed based on high or low calorie count.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### MVP Checklist
+  * **Initial Files**
+    * create project using cli
+    * add and link repository
+    * write README
+    * install extra dependencies  (bootstrap --add to angular-cli.json)
+    * basic page layout, minimal styling to make staring at this project for 8 hours a little more pleasant
+      * add header component
 
-## Running end-to-end tests
+  * **Create Model and List Foods**
+    * generate and populate food.model (name, calories, description)
+    * add seed data to root component
+    * generate food list component and link to root
+      * include edit/delete buttons
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+  * **C(r)UD**
+    * add delete functionality to food list component
+    * generate and link edit food component    
+    * generate and link save food component
 
-## Deploying to GitHub Pages
+  * **Pipe**
+    * generate calorie filter pipe
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+#### Style
+  * change icon
+  * choose global font
+  * set media page sizes
+  * layout (forms, columns)
+  * color scheme
 
-## Further help
+#### Refactor
+  * try to break site
+  * check dryness of code
+  * delete console.logs
+  * check spacing
+  * doublecheck README for setup instructions and other information
+  * if (extra time) {
+    * form validation (new and edit)
+    * attempt to link firebase
+    * different calorie displays
+      * total daily calories countdown (warning/danger bg-col when low?)
+      * average calories consumed
+    * add timestamp
+    * add multiple days
+    * API for standard calorie counts?
+    * add a route to about page
+  }
+  * amend UI and add uncompleted extra projects to 'Future Versions' list
 
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+&nbsp;
+## Known Bugs
+* No known bugs
+
+&nbsp;
+## Technologies Used
+* Angular2 (w/ cli)
+* Typescript
+* Node and npm
+* Bower
+* CSS
+* Bootstrap
+* HTML
+
+&nbsp;
+_If you have any questions or comments about this program, you can contact me at [brendangrubb@gmail.com](mailto:brendangrubb@gmail.com)._
+
+Copyright (c) 2017 Brendan Grubb
+
+This software is licensed under the GPL license
