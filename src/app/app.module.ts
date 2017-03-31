@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FoodListComponent } from './food-list/food-list.component';
 import { FoodEditComponent } from './food-edit/food-edit.component';
 import { FoodSaveComponent } from './food-save/food-save.component';
+import { CalorieFilterPipe } from './calorie-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FoodSaveComponent } from './food-save/food-save.component';
     HeaderComponent,
     FoodListComponent,
     FoodEditComponent,
-    FoodSaveComponent
+    FoodSaveComponent,
+    CalorieFilterPipe
   ],
   imports: [
     BrowserModule,
