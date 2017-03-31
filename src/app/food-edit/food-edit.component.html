@@ -1,15 +1,15 @@
 <form *ngIf="editFood">
   <div class="form-group">
-    <input type="text" name="name" class="form-control" placeholder="What did you have?">
+    <input [(ngModel)]="editFood.name" type="text" name="name" class="form-control" placeholder="What did you have?">
   </div>
   <div class="form-group">
-    <input type="text" name="category" class="form-control" placeholder="What type of meal?">
+    <input [(ngModel)]="editFood.category" type="text" name="category" class="form-control" placeholder="What type of meal?">
   </div>
   <div class="form-group">
-    <input type="text" name="description" class="form-control" placeholder="Care to get more specific?">
+    <input [(ngModel)]="editFood.description" type="text" name="description" class="form-control" placeholder="Care to get more specific?">
   </div>
   <div class="form-group">
-    <input type="text" name="calories" class="form-control" placeholder="How many calories?">
+    <input [(ngModel)]="editFood.calories" type="number" name="calories" class="form-control" placeholder="How many calories?">
   </div>
   <button (click)="endEditFood()" class="btn btn-sm">Done Editing</button>
 </form>
