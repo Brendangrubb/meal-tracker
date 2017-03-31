@@ -1,0 +1,24 @@
+
+<div class="row">
+  <div *ngFor='let food of foodList let idx = index'>
+    <div class="row">
+      <p class="food-name center">{{food.name}}</p>
+    </div>
+    <div class="row">
+      <div class="col-md-2 center">
+        <p class="food-cal">{{food.calories}} cal</p>
+        <p class="food-cat"><span class="opaque">Type</span> - {{food.category}}</p>
+      </div>
+      <div class="col-md-7">
+        <br>
+        <p class="food-desc"><span class="opaque">Description and Notes</span> - {{food.description}}</p>
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-info btn-sm">Edit Entry</button> &nbsp;
+        <button (click)="deleteFood(idx)" class="btn btn-danger btn-sm">Delete Entry</button>
+      </div>
+    </div>
+    <br><br>
+    <hr>
+  </div>
+</div>
