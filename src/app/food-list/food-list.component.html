@@ -1,5 +1,3 @@
-
-<div class="row">
   <div *ngFor='let food of foodList let idx = index'>
     <div class="row">
       <p class="food-name center">{{food.name}}</p>
@@ -14,11 +12,10 @@
         <p class="food-desc"><span class="opaque">Description and Notes</span> - {{food.description}}</p>
       </div>
       <div class="col-md-3">
-        <button class="btn btn-info btn-sm">Edit Entry</button> &nbsp;
+        <button (click)="startEditFood(idx)" class="btn btn-info btn-sm">Edit Entry</button> &nbsp;
         <button (click)="deleteFood(idx)" class="btn btn-danger btn-sm">Delete Entry</button>
       </div>
     </div>
     <br><br>
     <hr>
   </div>
-</div>

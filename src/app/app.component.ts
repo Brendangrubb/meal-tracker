@@ -8,6 +8,8 @@ import { Food } from './food.model';
 })
 
 export class AppComponent {
+  editFood = null;
+  
   foodList: Food[] = [
     new Food('Cereal', 'breakfast', 'Uncle Sams and Flax Plus with various berries', 200),
     new Food('Power Bar', 'snack', 'Luna Bar', 180),
@@ -19,5 +21,9 @@ export class AppComponent {
   deleteFood(idx: number) {
   this.foodList.splice(idx, 1);
 }
+
+  startEditFood(idx: number) {
+    this.editFood = this.foodList[idx];
+  }
 
 }

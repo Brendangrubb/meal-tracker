@@ -7,13 +7,16 @@
 
     <div class="col-md-8">
       <app-food-list
-      [foodList]='foodList'
+      [foodList]="foodList"
       (deleteFoodSender)="deleteFood($event)"
+      (editFoodSender)="startEditFood($event)"
       ></app-food-list>
     </div>
 
     <div class="col-md-4">
-      <app-food-edit></app-food-edit>
+      <app-food-edit
+        [editFood]="editFood"
+      ></app-food-edit>
     </div>
 
   </div>

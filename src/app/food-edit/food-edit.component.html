@@ -1,4 +1,4 @@
-<form>
+<form *ngIf="editFood">
   <div class="form-group">
     <input type="text" name="name" class="form-control" placeholder="What did you have?">
   </div>
@@ -11,4 +11,5 @@
   <div class="form-group">
     <input type="text" name="calories" class="form-control" placeholder="How many calories?">
   </div>
+  <button>Done Editing</button>
 </form>

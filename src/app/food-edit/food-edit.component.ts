@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Food } from './../food.model';
 
 @Component({
   selector: 'app-food-edit',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./food-edit.component.css']
 })
 export class FoodEditComponent implements OnInit {
+  @Input() editFood: Food;
 
   constructor() { }
 
