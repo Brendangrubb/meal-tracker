@@ -1,15 +1,22 @@
 <form *ngIf="editFood">
-  <div class="form-group">
-    <input [(ngModel)]="editFood.foodName" type="text" name="name" class="form-control" placeholder="What did you have?">
+  <div class="row">
+    <h3 class="center">Edit {{editFood.foodName}}</h3>
   </div>
-  <div class="form-group">
-    <input [(ngModel)]="editFood.category" type="text" name="category" class="form-control" placeholder="What type of meal?">
+  <div class="col-md-6">
+    <div class="form-group">
+      <input [(ngModel)]="editFood.foodName" type="text" name="name" class="form-control" placeholder="What did you have?">
+    </div>
+    <div class="form-group">
+      <input [(ngModel)]="editFood.category" type="text" name="category" class="form-control" placeholder="What type of meal?">
+    </div>
+    <div class="form-group">
+      <input [(ngModel)]="editFood.calories" type="number" name="calories" class="form-control" placeholder="How many calories?">
+    </div>
   </div>
-  <div class="form-group">
-    <input [(ngModel)]="editFood.description" type="text" name="description" class="form-control" placeholder="Care to get more specific?">
+  <div class="col-md-6">
+    <div class="form-group">
+      <textarea [(ngModel)]="editFood.description"  rows="3" type="text" name="description" class="form-control" placeholder="Care to get more specific?"></textarea>
+    </div>
+    <button (click)="endEditFood()" class="btn pink-btn">Done Editing</button>
   </div>
-  <div class="form-group">
-    <input [(ngModel)]="editFood.calories" type="number" name="calories" class="form-control" placeholder="How many calories?">
-  </div>
-  <button (click)="endEditFood()" class="btn btn-sm">Done Editing</button>
 </form>

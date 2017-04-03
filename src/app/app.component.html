@@ -1,30 +1,25 @@
 <app-header></app-header>
 
-<div class="container">
-  <div class="row center">
+<div class="container main-container center">
+  <div class="row">
     <app-food-save
-      (saveFoodSender)="saveFood($event)"
+    (saveFoodSender)="saveFood($event)"
     ></app-food-save>
   </div>
-</div>
-
-<div class="container main-container">
 
   <div class="row">
-    <div class="col-md-9">
-      <app-food-list
-      [foodList]="foodList"
-      (deleteFoodSender)="deleteFood($event)"
-      (editFoodSender)="startEditFood($event)"
-      ></app-food-list>
-    </div>
-
-    <div class="col-md-3">
-      <app-food-edit
-        [editFood]="editFood"
-        (endEditFoodSender)="endEditFood()"
-      ></app-food-edit>
-    </div>
+    <app-food-edit
+    [editFood]="editFood"
+    (endEditFoodSender)="endEditFood()"
+    ></app-food-edit>
   </div>
+
+<div class="row">
+  <app-food-list
+  [foodList]="foodList"
+  (deleteFoodSender)="deleteFood($event)"
+  (editFoodSender)="startEditFood($event)"
+  ></app-food-list>
+</div>
 
 </div>

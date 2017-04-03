@@ -1,7 +1,9 @@
-<select (change)="onChange($event.target.value)">
-  <option value="all" selected="selected">All Foods Eaten Today</option>
-  <option value="highCalorie">Only High Calorie Foods</option>
-</select>
+<div class="selecter center">
+  <select (change)="onChange($event.target.value)">
+    <option value="all" selected="selected">All Foods Eaten Today</option>
+    <option value="highCalorie">Only High Calorie Foods</option>
+  </select>
+</div>
 
   <div *ngFor='let food of foodList  | highCalorieFilter:setCalorieFilter; let idx = index;'>
     <div class="row">

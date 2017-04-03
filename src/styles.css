@@ -6,14 +6,16 @@ src: url('./assets/casual.ttf')  format('truetype');
 font-weight: bold;
 }
 
-
+body {
+  background-color: #94654c;
+}
 
 header {
   font-family: food;
   font-size: 6em;
   margin-bottom: 25px;
   padding: 40px;
-  background-color: beige;
+  background-color: #f89fa1;
 }
 
 .allfont {
@@ -37,6 +39,10 @@ header {
   font-size: 1.2em;
 }
 
+.food-list {
+  padding-top: 30px;
+}
+
 .food-name {
   font-size: 2em;
   font-weight: bold;
@@ -44,9 +50,17 @@ header {
 
 .main-container {
   padding-top: 15px;
-  background-color: ghostwhite;
+  background-color: #fefcd0;
 }
 
 .opaque {
   opacity: .75;
+}
+
+.pink-btn {
+  background-color: #f89fa1;
+}
+
+.selecter {
+  padding-top: 15px;
 }
