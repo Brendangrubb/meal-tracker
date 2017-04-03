@@ -6,6 +6,7 @@ import { Food } from './../food.model';
   templateUrl: './food-save.component.html',
   styleUrls: ['./food-save.component.css']
 })
+
 export class FoodSaveComponent implements OnInit {
   @Output() saveFoodSender = new EventEmitter();
 
@@ -31,9 +32,6 @@ export class FoodSaveComponent implements OnInit {
     this.startSaveFoodButton = true;
   }
 
-  constructor() { }
-
   ngOnInit() {
   }
-
 }

@@ -14,9 +14,6 @@ export class FoodEditComponent implements OnInit {
     this.endEditFoodSender.emit();
   }
 
-  constructor() { }
-
   ngOnInit() {
   }
-
 }

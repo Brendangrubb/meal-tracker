@@ -6,10 +6,6 @@ src: url('./assets/casual.ttf')  format('truetype');
 font-weight: bold;
 }
 
-body {
-  background-color: #94654c;
-}
-
 header {
   font-family: food;
   font-size: 6em;
@@ -20,6 +16,7 @@ header {
 
 .allfont {
   font-family: casual;
+  background-color: #94654c;
 }
 
 .center {

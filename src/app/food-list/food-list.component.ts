@@ -1,12 +1,12 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Food } from './../food.model';
 
-
 @Component({
   selector: 'app-food-list',
   templateUrl: './food-list.component.html',
   styleUrls: ['./food-list.component.css']
 })
+
 export class FoodListComponent implements OnInit {
   @Input() foodList: Food[];
   @Output() deleteFoodSender = new EventEmitter();
@@ -23,12 +23,9 @@ export class FoodListComponent implements OnInit {
   }
 
   onChange(option) {
-  this.setCalorieFilter = option;
-}
-
-  constructor() { }
+    this.setCalorieFilter = option;
+  }
 
   ngOnInit() {
   }
-
 }
