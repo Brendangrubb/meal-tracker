@@ -11,10 +11,17 @@ export class FoodSaveComponent implements OnInit {
 
   saveFood = false;
   startSaveFoodButton = true;
+  abortSaveFoodButton = false;
 
   startSaveFood() {
     this.saveFood = true;
     this.startSaveFoodButton = false;
+    this.abortSaveFoodButton = true;
+  }
+
+  abortSaveFood() {
+    this.saveFood = false;
+    this.startSaveFoodButton = true;
   }
 
   completeSaveFood(foodName: string, category: string, description: string, calories: number) {
