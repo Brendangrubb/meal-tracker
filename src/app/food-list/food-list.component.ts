@@ -12,7 +12,7 @@ export class FoodListComponent implements OnInit {
   @Output() deleteFoodSender = new EventEmitter();
   @Output() editFoodSender = new EventEmitter();
 
-  setCalorieFilter: string = "all";
+  setCalorieFilter = 'all';
 
   deleteFood(idx: number) {
     this.deleteFoodSender.emit(idx);
